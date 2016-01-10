@@ -4,11 +4,11 @@ var app = express();
 
 app.get('/',function(req,res) {
 
-  var i =  req.connection.remoteAddress;
+  var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   var op = req.headers['user-agent'].split(/\(/)[1];
   console.log('yay',op);
   var d = {
-    "IP Address": i,
+    "IP Address": ip,
     "Language": req.headers['accept-language'],
     "Operating System": op 
   }
