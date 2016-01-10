@@ -1,0 +1,17 @@
+{
+  "name": "ip",
+  "version": "1.0.0",
+  "description": "ip address + lang + operating system getter",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "raheela",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "4.2.2"
+  }
+}
